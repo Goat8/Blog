@@ -11,3 +11,12 @@
 3. Create Comments
 4. List Comments
 5. Tag Comments
+
+##### Services
+1. Posts Service
+2. Comments Service
+3. Query Service
+4. Moderation Service
+
+##Tools
+NodeJs ExpressJs, ReactJs
