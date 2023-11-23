@@ -1,0 +1,11 @@
+# Node.js
+node_modules/
+
+# Include all node_modules directories, including those in subfolders
+**/node_modules/
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
