@@ -5,7 +5,7 @@ export default ()=>{
     const [title, setTitle] = useState('')
     const onSubmit = async(event)=>{
         event.preventDefault() // prevent default action
-        const response = await axios.post('http://localhost:4000/posts', {
+        const response = await axios.post('http://posts.com/posts', {
             title
         })
 

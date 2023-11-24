@@ -5,7 +5,7 @@ export default ({postId}) =>{
     const [content, setContent] = useState('');
     const onSubmit = async(event)=>{
         event.preventDefault();
-        const resposne = await axios.post(`http://localhost:4001/post/${postId}/comments`, {content})
+        const resposne = await axios.post(`http://posts.com/post/${postId}/comments`, {content})
         setContent('')
     }
     return <div>
