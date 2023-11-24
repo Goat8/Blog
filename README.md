@@ -19,4 +19,4 @@
 4. Moderation Service
 
 ## Tools
-NodeJs ExpressJs, ReactJs
+NodeJs ExpressJs, ReactJs, Docker, Kubernetes
