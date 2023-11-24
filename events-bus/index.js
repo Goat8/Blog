@@ -10,11 +10,11 @@ app.post('/events', async (req, res)=>{
     try{
         const event = req.body;
         console.log("EVENT RECEIVED",event);
-        events.push(event)
-        await axios.post("http://localhost:4000/events", event); //posts
-        await axios.post("http://localhost:4001/events", event); //comments
-        await axios.post("http://localhost:4002/events", event); //query (all posts and corresponding comments)
-        await axios.post("http://localhost:4003/events", event); //moderation service
+        events.push(event)                                          //posts-clusterip-srv
+        await axios.post("http://posts-clusterip-srv:4000/events", event); //posts http://posts-clusterip-srv:4000
+        await axios.post("http://comments-srv:4001/events", event); //comments
+        await axios.post("http://query-srv:4002/events", event); //query (all posts and corresponding comments)
+        await axios.post("http://moderation-srv:4003/events", event); //moderation service
         res.send({status:'OK'})
 
     }
